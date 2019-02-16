@@ -28,7 +28,7 @@ class StoreRequest extends FormRequest
             'nicknames'   => 'present|array|min:0|max:100',
             'nicknames.*' => 'sometimes|string|min:3|max:50|regex:/(^[A-Za-z0-9 ÁÉÍÓÚÑáéíóúñ]+$)+/',
             'title_id'    => 'nullable|integer|exists:titles,id',
-            'number'      => 'required|integer|min:1',
+            'number'      => 'required|integer|min:0',
 
         ];
     }
