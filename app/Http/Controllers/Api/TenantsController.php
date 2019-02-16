@@ -86,7 +86,12 @@ class TenantsController extends Controller
      */
     public function update(UpdateRequest $request, Tenant $tenant)
     {
-        $tenant->update($request->all());
+        if ($request->has('title_id')) {
+            $tenant->title_id = $request->input('title_id');
+        }
+
+        $tenant->fill($request->except('title_id'));
+        $tenant->save();
 
         return response()->json($tenant, 200);
     }

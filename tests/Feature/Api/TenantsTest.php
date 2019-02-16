@@ -253,7 +253,7 @@ class TenantsTest extends TestCase
 
             $name     = isset($params['name']) ? $params['name'] : $target->name;
             $number   = isset($params['number']) ? $params['number'] : $target->number;
-            $title_id = isset($params['title_id']) ? $params['title_id'] : $target->title_id;
+            $title_id = array_key_exists('title_id', $params) ? $params['title_id'] : $target->title_id;
 
             $this->assertDatabaseHas('tenants', compact('name', 'number', 'id'));
 
