@@ -78,7 +78,7 @@
             </label>
 
             <div class="col-md-7">
-              <input v-model="form.number" class="form-control" type="number" name="number" min="1" step="1">
+              <input v-model="form.number" class="form-control" type="number" name="number" min="0" step="1">
               <has-error :form="form" field="number" />
             </div>
           </div>

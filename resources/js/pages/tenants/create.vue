@@ -10,7 +10,7 @@
         <form novalidate autocomplete="off" @submit.prevent="create" @keydown="form.onKeydown($event)">
           <alert-success :form="form">
             ¡Registro creado exitosamente!
-            
+
             <router-link :to="{ name: 'tenants.show', params: { id }}" class="alert-link">
               <fa icon="eye" fixed-width /> Ver
             </router-link>
@@ -74,7 +74,7 @@
             </label>
 
             <div class="col-md-7">
-              <input v-model="form.number" class="form-control" type="number" name="number" min="1" step="1">
+              <input v-model="form.number" class="form-control" type="number" name="number" min="0" step="1">
               <has-error :form="form" field="number" />
             </div>
           </div>
