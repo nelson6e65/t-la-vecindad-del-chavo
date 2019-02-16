@@ -15,7 +15,7 @@ export default [
 
   { path: '/login', name: 'login', component: Login },
 
-  { path: '/dashboard', name: 'home', component: Home },
+  { path: '/dashboard', name: 'home', redirect: { name: 'tenants.index' } },
   { path: '/inquilinos',
     component: Tenants,
     children: [
