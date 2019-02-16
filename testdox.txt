@@ -1,0 +1,54 @@
+Feature\Api\Auth
+ [x] Default user exists
+ [x] Login returns correct format if success and code if fails with data set "Empty"
+ [x] Login returns correct format if success and code if fails with data set "No <email>"
+ [x] Login returns correct format if success and code if fails with data set "No <password>"
+ [x] Login returns correct format if success and code if fails with data set "Nonexistent"
+ [x] Login returns correct format if success and code if fails with data set "Wrong password"
+ [x] Login returns correct format if success and code if fails with data set "Wrong email"
+ [x] Login returns correct format if success and code if fails with data set "Correct credentials"
+ [x] Only performs login via json post with data set #0
+ [x] Only performs login via json post with data set #1
+ [x] Only performs login via json post with data set #2
+ [x] Only performs login via json post with data set #3
+ [x] Only performs login via json post with data set #4
+ [x] Returns authenticated user
+ [x] Authenticated users can logout
+ [x] Route only accept ajax requests with data set #0
+ [x] Route only accept ajax requests with data set #1
+ [x] Route only accept ajax requests with data set #2
+
+Feature\Api\Tenants\Media
+ [x] Route only accept ajax requests with data set "/api/tenants/{tenant}/media"
+
+Feature\Api\Tenants
+ [x] Validates and returns a list of paginated tenants with data set "default valid without params"
+ [x] Validates and returns a list of paginated tenants with data set "with only $page"
+ [x] Validates and returns a list of paginated tenants with data set "with only $per_page"
+ [x] Validates and returns a list of paginated tenants with data set "with invalid $per_page type"
+ [x] Validates and returns a list of paginated tenants with data set "with invalid $page type"
+ [x] Validates and returns a list of paginated tenants with data set "with invalid negative value for $page and $per_page"
+ [x] Is aware of nonexistent tenant with data set #0
+ [x] Is aware of nonexistent tenant with data set #1
+ [x] Is aware of nonexistent tenant with data set #2
+ [x] Is aware of nonexistent tenant with data set #3
+ [x] Validates and performs tenants creation with data set "valid params"
+ [x] Validates and performs tenants creation with data set "with invalid name"
+ [x] Validates and performs tenants creation with data set "with inexistent title"
+ [x] Validates and performs tenants creation with data set "with invalid number"
+ [x] Performs show tenant
+ [x] Validates and performs tenant update with data set "valid params"
+ [x] Validates and performs tenant update with data set "valid name only"
+ [x] Validates and performs tenant update with data set "valid null title"
+ [x] Validates and performs tenant update with data set "with invalid name"
+ [x] Validates and performs tenant update with data set "with invalid number"
+ [x] Validates and performs tenant update with data set "empty"
+ [x] Performs deletion
+ [x] Route only accept ajax requests with data set "/api/tenants"
+ [x] Route only accept ajax requests with data set "/api/tenants/{tenant}"
+
+Feature\Api\Titles
+ [x] Can get titles list with data set "default valid without params"
+ [x] Route only accept ajax requests with data set "/api/titles"
+ [x] Route only accept ajax requests with data set "/api/titles/{user}"
+

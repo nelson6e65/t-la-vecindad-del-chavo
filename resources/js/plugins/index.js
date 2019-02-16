@@ -1,0 +1,8 @@
+import './axios'
+import './fontawesome'
+import './moment'
+import './sweetalert'
+import './vue-tables'
+import './multiselect'
+import './jquery'
+import 'bootstrap'

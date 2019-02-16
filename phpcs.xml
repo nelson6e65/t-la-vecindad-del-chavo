@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="php-test-users">
+    <description>The coding standard configuration.</description>
+
+    <rule ref="PSR2"/>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <severity>0</severity>
+    </rule>
+
+    <exclude-pattern type="relative">^.git/*</exclude-pattern>
+    <exclude-pattern type="relative">^resources/*</exclude-pattern>
+    <exclude-pattern type="relative">^bootstrap/cache/*</exclude-pattern>
+    <exclude-pattern type="relative">^storage/*</exclude-pattern>
+    <exclude-pattern type="relative">^vendor/*</exclude-pattern>
+
+    <arg name="colors"/>
+    <arg name="extensions" value="php"/>
+    <arg name="encoding" value="utf-8"/>
+
+</ruleset>

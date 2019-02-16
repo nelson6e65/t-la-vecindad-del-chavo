@@ -1,0 +1,4 @@
+files:
+  include:
+    - 'resources/assets/**/*.s+(a|c)ss'
+    - 'resources/assets/js/**/*.vue'
